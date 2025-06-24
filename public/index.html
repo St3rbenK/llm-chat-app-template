@@ -1,18 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LLM Chat App</title>
+    <title>Chat IA Thothfy</title>
     <style>
       :root {
-        --primary-color: #f6821f;
-        --primary-hover: #e67e22;
+        /* Paleta de cores alterada para tons de azul */
+        --primary-color: #3b82f6; /* Azul primário */
+        --primary-hover: #2563eb; /* Azul mais escuro para hover */
         --light-bg: #f9fafb;
         --border-color: #e5e7eb;
         --text-color: #1f2937;
         --text-light: #6b7280;
-        --user-msg-bg: #fff2e6;
+        --user-msg-bg: #e0f2fe; /* Fundo da mensagem do usuário em azul claro */
         --assistant-msg-bg: #f3f4f6;
       }
 
@@ -120,6 +121,7 @@
       .typing-indicator {
         display: none;
         margin-bottom: 1rem;
+        padding: 0 1rem; /* Adicionado padding para consistência */
         font-style: italic;
         color: var(--text-light);
       }
@@ -138,37 +140,37 @@
   </head>
   <body>
     <header>
-      <h1>Cloudflare AI Chat</h1>
-      <p>Powered by Cloudflare Workers AI</p>
+      <h1>Chat IA da Thothfy</h1>
+      <p>Desenvolvido com a Inteligência Artificial da Thothfy</p>
     </header>
 
     <div class="chat-container">
       <div id="chat-messages" class="chat-messages">
         <div class="message assistant-message">
           <p>
-            Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can
-            I help you today?
+            Olá! Eu sou um assistente de IA da Thothfy. Como posso ajudar você
+            hoje?
           </p>
         </div>
       </div>
 
       <div class="typing-indicator" id="typing-indicator">
-        AI is thinking...
+        A IA está pensando...
       </div>
 
       <div class="message-input">
         <textarea
           id="user-input"
-          placeholder="Type your message here..."
+          placeholder="Digite sua mensagem aqui..."
           rows="1"
           autofocus
         ></textarea>
-        <button id="send-button">Send</button>
+        <button id="send-button">Enviar</button>
       </div>
     </div>
 
     <footer>
-      <p>Cloudflare Workers AI Chat Template &copy; 2025</p>
+      <p>Modelo de Chat IA Thothfy © 2025</p>
     </footer>
 
     <!-- Chat app script -->
